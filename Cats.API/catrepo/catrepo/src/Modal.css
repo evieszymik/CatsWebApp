@@ -1,0 +1,33 @@
+﻿.modal-content {
+    width: 60vw;
+    height: 60vh;
+    padding: 20px;
+    background: #5f5dbd;
+    border-radius: 8px;
+    margin: 20vh auto;
+}
+
+.modal-header {
+    text-align: center;
+    font-size: 2.7rem;
+    text-shadow: 4px 4px 6px rgba(167, 171, 213, 1);
+    margin: 10px;
+    color: floralwhite;
+}
+
+.modal-input {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-input label {
+    color: #c9fdd7;
+}
+
+.button-container-modal {
+    margin-top: 30px;
+    width: 50%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+}

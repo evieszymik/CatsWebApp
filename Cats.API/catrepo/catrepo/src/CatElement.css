@@ -1,0 +1,62 @@
+﻿.container-cat-element {
+    background: #4f3b79 !important;
+    margin: 30px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 3px rgba(199, 176, 227, 1);
+    min-width:35%
+}
+
+p {
+    text-align: center;
+    color: floralwhite;
+}
+
+.cat-name {
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+.button-container {
+    width:100%;
+    justify-self:center;
+    display:flex;
+    justify-content:space-around;
+}
+
+.button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 5rem;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-edit {
+    background-color: #4ef037;
+}
+
+.button-delete {
+    background-color: #ff0000;
+}
+
+.button-edit:hover {
+    background-color: #ffe9e3;
+    color: #4ef037;
+    border: 1px solid #4ef037;
+}
+
+.button-delete:hover {
+    background-color: #ffe9e3;
+    border: 1px solid red;
+    color: #ff0000;
+}
+
+@media (max-width: 1000px) {
+
+    .container-cat-element {
+        width:50%;     
+    }
+}
