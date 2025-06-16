@@ -1,9 +1,10 @@
 ﻿import './CatElement.css';
+import React from 'react';
 
 const CatElement = (props) => {
    
     return (
-        <div className="container-cat-element">
+        <div className="container-cat-element">           
             <p className="cat-name">{props.cat.name}</p>
             <p>Fur Color: {props.cat.color}</p>
             <div className="button-container">
@@ -14,5 +15,5 @@ const CatElement = (props) => {
     );
 }
 
-export default CatElement;
+export default React.memo(CatElement);
 

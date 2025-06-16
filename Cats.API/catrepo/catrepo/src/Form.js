@@ -26,6 +26,7 @@ export const Form = (props) => {
                 const response = await axios.post('https://localhost:7065/api/cats', newCat)
                 const cat = response.data
                 props.handleAddCat(cat)
+                console.log(cat)
                 setName("")
                 setColor("")
             }

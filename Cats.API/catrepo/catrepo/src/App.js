@@ -10,11 +10,11 @@ Modal.setAppElement('#root');
 function App() {
     const [cats, setCats] = useState([])
     const [isOpenModal, setIsOpenModal] = useState(false)
-    const [editCat, setEditCat] = useState("")
+    const [editCat, setEditCat] = useState({name: "", color: ""})
     const [nameError, setNameError] = useState(false)
     const [colorError, setColorError] = useState(false)
 
-    useEffect(() => { fetchCats(); }, [cats])
+    useEffect(() => { fetchCats();}, [])
 
     const fetchCats = async () => {
         try {
@@ -59,9 +59,10 @@ function App() {
     }
     const handleEditCat = async (cat) => {    
         try {
-            await axios.put(`https://localhost:7065/api/cats/${cat.id}`, editCat);
-            const index = cats.indexOf(cat);
-            cats.splice(index, 1, { ...editCat });
+            await axios.put(`https://localhost:7065/api/cats/${cat.id}`, editCat);          
+            setCats((prevCats) =>
+                prevCats.map((c) => (c.id === cat.id ? { ...editCat } : c))
+            );
         }
         catch (error) {
             console.error('Edit error ', error);
