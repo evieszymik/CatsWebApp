@@ -11,19 +11,19 @@ namespace Cats.Application.Cats
 {
     public class Create
     {
-        public class Command : IRequest<Unit>
+        public class Command : IRequest<Cat>
         {
             public required Cat cat { get; set; }
         }
 
-        public class Handler : IRequestHandler<Command, Unit>
+        public class Handler : IRequestHandler<Command, Cat>
         {
             private readonly DataContext _context;
             public Handler(DataContext context)
             {
                 _context = context;
             }
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<Cat> Handle(Command request, CancellationToken cancellationToken)
             {
                 var cat = new Cat
                 {
@@ -32,7 +32,7 @@ namespace Cats.Application.Cats
                 };
                 _context.cats.Add(cat);
                 await _context.SaveChangesAsync(cancellationToken);
-                return Unit.Value;
+                return cat;
             }
         }
     }

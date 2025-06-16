@@ -44,7 +44,7 @@ namespace Cats.API.Controllers
         public async Task<IActionResult> CreateCat(Cat cat)
         {
             var result = await _mediator.Send(new Create.Command { cat = cat });
-            return Ok(cat);
+            return Ok(result);
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCat(Guid id)
