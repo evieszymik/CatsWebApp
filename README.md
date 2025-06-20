@@ -1,31 +1,31 @@
-# 🐱 CatsWebApp – Aplikacja CRUD o Kotach
+# 🐱 CatsWebApp – Cat CRUD Web App
 
-CatRepo to prosta aplikacja webowa typu CRUD do zarządzania kotami. Umożliwia dodawanie, edytowanie oraz usuwanie informacji o kotach. Projekt został stworzony z wykorzystaniem **C# (ASP.NET Core)** po stronie backendu oraz **React** po stronie frontendowej. Dane są przechowywane w **SQLite**.
-
-## 🛠 Technologie
-
+CatRepo is a simple CRUD web application for managing cats. It allows you to add, edit, and delete cat entries. The project uses **C# (ASP.NET Core)** for the backend, **React** for the frontend, and stores data using **SQLite**.
+## 🛠 Technologies
 - **Backend:** C# / ASP.NET Core
 - **Frontend:** React + Axios
-- **Baza danych:** SQLite
+- **Database:** SQLite
 
-## ⚙️ Funkcjonalności
-- Podgląd listy wszystkich kotów
-- Dodawanie nowych kotów
-- Edytowanie istniejących kotów
-- Usuwanie kotów
+## ⚙️ Features
+- View a list of all cats
+- Add new cats
+- Edit existing cats
+- Delete cats
 
 
-## 🚀 Uruchamianie projektu
+## 🚀 How to Run the Project
 
 ### Backend (C# / ASP.NET Core)
-1. Otwórz i uruchom projekt w **Visual Studio**.
-2. Backend wystartuje domyślnie na `https://localhost:3000`.
+1. Open the project in **Visual Studio**.
+2. Start the application.
+3. The app will launch and automatically open **SwaggerUI** in browser at `https://localhost:7065/swagger/index.html`.
 
 ### Frontend (React)
-1. Otwórz w terminalu folder `Cats.API/catrepo/catrepo`, gdzie znajduje się aplikacja Reacta.
-2. Zainstaluj zależności
+1. Navigate to the `Cats.API/catrepo/catrepo` folder, where the React app is located.
+2. Open terminal.
+3. Install dependencies
     ```bash
    npm install
-3. Uruchom aplikację
+4. Start the application
       ```bash
    npm start
