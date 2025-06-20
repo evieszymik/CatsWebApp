@@ -29,3 +29,6 @@ CatRepo is a simple CRUD web application for managing cats. It allows you to add
 4. Start the application
       ```bash
    npm start
+      
+![Cat list screenshot](Cats.API/catrepo/catrepo/images/listOfCats.png)
+![Cat list screenshot](Cats.API/catrepo/catrepo/images/edit.png)
