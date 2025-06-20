@@ -59,9 +59,9 @@ function App() {
     }
     const handleEditCat = async (cat) => {    
         try {
-            await axios.put(`https://localhost:7065/api/cats/${cat.id}`, editCat);          
+            await axios.put(`https://localhost:7065/api/cats/${cat.id}`, cat);          
             setCats((prevCats) =>
-                prevCats.map((c) => (c.id === cat.id ? { ...editCat } : c))
+                prevCats.map((c) => (c.id === cat.id ? { ...cat } : c))
             );
         }
         catch (error) {

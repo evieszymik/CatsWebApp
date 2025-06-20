@@ -19,4 +19,8 @@
 		<ProjectReference Include="..\Cats.Application\Cats.Application.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="catrepo\catrepo\Nowy folder\" />
+	</ItemGroup>
+
 </Project>
