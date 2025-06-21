@@ -1,6 +1,5 @@
 ﻿using Cats.Infrastructure;
 using Cats.Domain;
-using Cats.Application;
 using Cats.Application.Cats;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;

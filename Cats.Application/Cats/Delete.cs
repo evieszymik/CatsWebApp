@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Cats.Domain;
-using Cats.Infrastructure;
+﻿using Cats.Infrastructure;
 using MediatR;
 
 namespace Cats.Application.Cats
